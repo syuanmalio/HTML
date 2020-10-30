@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- width=device-width:使用者寬度;initial-scale=1.0:比例一比一 -->
+    <title>表格製作</title>
+    <head>
+        <style>
+            .tab1 {border:3px solid red;
+                 width:500px;
+                 border-collapse:collapse}
+            td,th {border:1px solid gray}
+            thead {background:	#548C00;
+                    border-bottom:3px double red;
+                    text-transform:capitalize;
+                    color:white}
+            tbody {background:	#82D900;
+                    text-align:center /*文字置中*/}
+            tbody tr:nth-child(2n) {background:#9AFF02}
+            tbody tr:nth-child(2n+1) {background:#B7FF4A}
+            tbody tr:hover {background:#B87070}
+            tbody td:hover {color:#A8FF24}
+            
+        </style>
+    </head>
+    <body>
+        <div><h2>div的垂直練習</h2></div>
+        <div style="width:400px;height:100px;border:1px solid red;line-height:100px;margin-bottom:200px;">有指定高度(透過ling-height調整)</div>
+        <div style="width:400px;border:1px solid green;padding:50px 0px">沒有指定高度(透過div的padding調整)</div>
+
+        <hr>
+        <table class="tab1">
+            <caption><h3>表格練習</h3></caption>
+            <thead>
+                <tr>
+                    <th>tit1</th>
+                    <th>tit2</th>
+                    <th>tit3</th>
+                    <th>tit4</th>
+                </tr>
+                <tr>
+                    <th colspan="2">tit1</th>
+                    <!-- <th>tit2</th> -->
+                    <th colspan="2">tit3</th>
+                    <!-- <th>tit4</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">1</td>
+                    <td>2</td>
+                    <td colspan="2" rowspan="2">3</td>
+                    <!-- <td>4</td> -->
+                </tr><tr>
+                    <!-- <td>1</td> -->
+                    <!-- <td>2</td>
+                    <td>3</td> -->
+                    <td>4</td>
+                </tr><tr>
+                    <!-- <td>1</td> -->
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

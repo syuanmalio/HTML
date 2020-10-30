@@ -1,0 +1,18 @@
+        @font-face {
+            src:url(../fonts/JustOldFashion.ttf);
+            font-family:font1;}
+        .font1 {font-family:font1;}
+        @font-face {
+            src:url(../fonts/SCRIPTIN.ttf);
+            font-family:font2}
+        .font2 {font-family:font2} 
+
+        .ab1{color:orange;text-decoration:underline}
+.ab2{color:palevioletred;text-decoration: overline}
+h3{color:green}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    color:purple;
+    font-size:2em;
+}

@@ -1,0 +1,14 @@
+.list {
+    border:10px ridge #5CADAD;
+    width:400px;
+    /* border:5px 10px 15px 20px  */
+    /* border-top-left-radius:15px;
+    border-bottom-right-radius:15px; */
+    /* border-radius:20px 0; */
+    border-radius:20px 0 20px 0;    
+    
+    list-style-type:upper-alpha}
+.list1 {list-style-type:none;list-style-image:url("../image/road_3.png")}
+.in {list-style-position:inside}
+.out{list-style-position:outside}
+li {line-height:20px}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- width=device-width:使用者寬度;initial-scale=1.0:比例一比一 -->
+    <title>清單 樣式修改 選擇器</title>
+    <link rel="stylesheet" href="style/list1.css">
+    <style>
+        /* <!-- .list {list-style-type:upper-alpha}
+        .list1 {list-style-type:none;list-style-image:url("image/road_3.png")}
+        .in {list-style-position:inside}
+        .out{list-style-position:outside} --> */
+    </style>
+     
+</head>
+<body>
+
+    <a href='http://www.pchome.com.tw'>Pchome</a>
+    <a href='01_first_20200918.html'>first</a>
+    <a href='03_hyper link_20200918.html'>hyper link</a>
+    <a href='mailto:contact@iii.org.tw'>mail to me</a>
+    <a href='03_hyper link_20200918.html#bookmark1'>bookmark1</a>
+
+    <h2>項目清單</h2>
+    <ul class="list">
+        <li>即時</li>
+        <li>熱門</li>
+        <li>生活
+            <ol class="list1">
+                <li>娛樂</li>
+                <li class="in">健康(in)</li>
+                <li class="out">玩咖(out)</li>
+            </ol>
+        </li>
+        <li>時尚</li>
+    </ul>
+    
+    <h2>序號清單</h2>
+    <ol>
+        <li>就業養成班
+            <ul>
+                <li>APP/WAP前端工程師</li>
+            </ul>
+        </li>
+        <li>軟體設計精修班</li>
+        <li>AI智慧實戰班</li>
+    </ol>
+    
+    <h2>定義清單</h2>
+    <h3>台灣梅花鹿</h3>
+    <dl>
+        <dt>學名：</dt>
+        <dd>Cervus nippon taiouanus</dd>
+        <dt>分類:</dt>
+        <dd><ul>
+            <li>鹿科 Cervidae</li>
+            <li>鹿屬 Cervus</li>
+            <li>梅花鹿 C. nippon</li>
+        </ul></dd>
+        <dt>特徵:</dt>
+        <dd>體長約150公分，喜歡群居。在每年的10~12月進行交配，為一短日照季節性生殖之動物</dd>
+        <dt>分布:</dt>
+        <dd>野外族群已在1969年左右滅絕，目前確認為純種族群的母群是來自於台北市立動物園</dd>
+    </dl>
+</body>
+</html>
